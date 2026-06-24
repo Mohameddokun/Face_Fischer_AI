@@ -109,7 +109,7 @@ def move_to_policy_index(move: chess.Move):
 @st.cache_resource
 def load_trained_model():
     model = ChessNet(input_channels=19, num_blocks=4)
-    model_path = "https://github.com/Mohameddokun/Face_Fischer_AI/blob/main/chess_resnet.pth"
+    model_path = "chess_resnet.pth"
     if os.path.exists(model_path):
         model.load_state_dict(torch.load(model_path, map_location='cpu'))
         st.sidebar.success("♟️ Bobby Fischer engine loaded successfully!")
