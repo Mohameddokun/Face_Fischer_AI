@@ -1,5 +1,5 @@
 streamlit
-chess
+python-chess
 chess.svg
 torch
 torch.nn
